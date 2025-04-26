@@ -1,17 +1,29 @@
-# 🤖 Deep Research Agentic AI
+# 🔎 Dual-Agent AI Deep Research System
 
-A LangGraph-powered **Agentic AI System** designed to perform deep research and generate high-quality, human-like answers. This project simulates a collaborative workflow between a **Research Agent** and a **Writer Agent**, using stateful, autonomous agents to process user queries from scratch to polished answers.
+This is a dual-agent AI system that performs deep online research using Tavily and generates human-like answers using LangGraph and LangChain.
 
----
+## 📦 Features
 
-## 🌟 Highlights
+- Research Agent: Uses Tavily for live web search
+- Writer Agent: Summarizes and composes professional answers
+- LangGraph: Manages agent workflow as a state graph
 
-- 🧠 **Agentic Workflow**: Uses LangGraph's stateful graph execution to structure multi-agent tasks.
-- 🔍 **Research Agent**: Fetches web-based insights using search tools.
-- 📝 **Writer Agent**: Drafts detailed responses based on collected research.
-- 🧱 **Modular Design**: Easily extendable to support more agents or tools like summarizers, fact-checkers, etc.
+## 🚀 How to Run
 
----
+1. Clone the repo
+2. Install dependencies: `pip install -r requirements.txt`
+3. Add your GROQ_API_KEY key to `.env`
+4. Run the app: `python main.py`
 
-## 📁 Project Structure
+## 📁 Structure
+
+- `agents/`: Agents' logic
+- `workflow/`: LangGraph state logic
+- `main.py`: Entry point
+
+## 🔧 Future Ideas
+
+- Add third agent for fact-checking
+- Integrate with Streamlit for UI
+
 
